@@ -146,4 +146,4 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Inherit from the proprietary version
--include vendor/xiaomi/begonia/BoardConfigVendor.mk
+include vendor/xiaomi/begonia/BoardConfigVendor.mk
