@@ -92,8 +92,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio_policy.stub \
     libaudiofoundation.vendor \
-    libtinycompress \
-    tinymix
+    libtinycompress
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
