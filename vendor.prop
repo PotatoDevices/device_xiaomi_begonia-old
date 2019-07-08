@@ -68,6 +68,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 debug.mediatek.disp_decompress=1
 debug.mediatek.game_pq_enable=1
 debug.sf.disable_backpressure=1
+debug.sf.latch_unsignaled=1
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
