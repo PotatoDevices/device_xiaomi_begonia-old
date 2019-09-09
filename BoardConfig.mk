@@ -132,8 +132,5 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
-
 # Inherit from the proprietary version
 include vendor/xiaomi/begonia/BoardConfigVendor.mk
