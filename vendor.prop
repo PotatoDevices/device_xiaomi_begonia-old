@@ -207,9 +207,6 @@ ro.hardware.kmsetkey=beanpod
 ro.vendor.mtk_microtrust_tee_support=1
 ro.vendor.mtk_tee_gp_support=1
 
-# Userspace
-init.userspace_reboot.is_supported=true
-
 # WiFi
 ro.vendor.mtk_wfd_support=1
 ro.vendor.wfd.dummy.enable=1
