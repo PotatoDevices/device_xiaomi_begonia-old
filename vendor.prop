@@ -91,6 +91,9 @@ ro.vendor.mtk_config_max_dram_size=0x800000000
 # EGL
 ro.hardware.egl=meow
 
+# Fastbootd
+ro.fastbootd.available=true
+
 # FRP
 ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 

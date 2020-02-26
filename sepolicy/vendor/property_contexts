@@ -12,6 +12,9 @@ ro.eyecare.brightness.level                   u:object_r:vendor_displayfeature_p
 ro.hist.brightness.threshold                  u:object_r:vendor_displayfeature_prop:s0
 ro.xiaomi.bl.poll                             u:object_r:vendor_displayfeature_prop:s0
 
+# Fastbootd
+ro.fastbootd.available                 u:object_r:exported_default_prop:s0
+
 # Fingerprint
 fpc_kpi                    u:object_r:vendor_fp_prop:s0
 gf.debug.dump_bigdata_data u:object_r:vendor_fp_prop:s0
