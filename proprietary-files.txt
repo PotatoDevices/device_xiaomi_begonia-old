@@ -1145,6 +1145,42 @@ lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
+# NXP
+vendor/etc/nxp/Phone_bt_bt.bin
+vendor/etc/nxp/Phone_hsmic_hs.bin
+vendor/etc/nxp/Phone_mic_hp.bin
+vendor/etc/nxp/Phone_mic_recv.bin
+vendor/etc/nxp/Phone_mic_spk.bin
+vendor/etc/nxp/Phone_mic_spk_ev.bin
+vendor/etc/nxp/Record_hs_cam.bin
+vendor/etc/nxp/Record_hs_fast.bin
+vendor/etc/nxp/Record_hs_normal.bin
+vendor/etc/nxp/Record_hs_unprocess.bin
+vendor/etc/nxp/Record_hs_vr.bin
+vendor/etc/nxp/Record_mic_cam.bin
+vendor/etc/nxp/Record_mic_fast.bin
+vendor/etc/nxp/Record_mic_normal.bin
+vendor/etc/nxp/Record_mic_unprocess.bin
+vendor/etc/nxp/Record_mic_vr.bin
+vendor/etc/nxp/VoIP_bt_bt.bin
+vendor/etc/nxp/VoIP_hsmic_hs.bin
+vendor/etc/nxp/VoIP_hsmic_hs_game.bin
+vendor/etc/nxp/VoIP_mic_hp.bin
+vendor/etc/nxp/VoIP_mic_hp_game.bin
+vendor/etc/nxp/VoIP_mic_hs.bin
+vendor/etc/nxp/VoIP_mic_recv.bin
+vendor/etc/nxp/VoIP_mic_recv_game.bin
+vendor/etc/nxp/VoIP_mic_spk.bin
+vendor/etc/nxp/VoIP_mic_spk_game.bin
+vendor/lib/lib_smartpa_nxp_ap.so
+vendor/lib/libnxp_extamp_intf.so
+vendor/lib/libnxprecord.so
+vendor/lib/libnxpspeech.so
+vendor/lib64/lib_smartpa_nxp_ap.so
+vendor/lib64/libnxp_extamp_intf.so
+vendor/lib64/libnxprecord.so
+vendor/lib64/libnxpspeech.so
+
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-gpunn
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-neuron-ann
