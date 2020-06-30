@@ -66,6 +66,3 @@ ro.vendor.net.enable_dual_wifi=1
 wifi.direct.interface=p2p0
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
-
-# Zygote Preforking
-persist.device.config.runtime_native.uasp_pool_enabled=true
