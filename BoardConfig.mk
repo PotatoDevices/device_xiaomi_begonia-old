@@ -90,6 +90,10 @@ TARGET_ENABLE_MEDIADRM_64 := true
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+ODM_MANIFEST_SKUS += \
+    begonia
+
+ODM_MANIFEST_BEGONIA_FILES := $(DEVICE_PATH)/manifest_begonia.xml
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
