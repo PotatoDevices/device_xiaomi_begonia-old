@@ -60,6 +60,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        # Load libwifi-hal-mtk.so instead of libwifi-hal.so
+        vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek)
+            patchelf --replace-needed libwifi-hal.so libwifi-hal-mtk.so ${2}
+            ;;
         # Load VNDK-29 version of libmedia_helper
         vendor/lib64/hw/audio.primary.mt6785.so)
             "${PATCHELF}" --replace-needed libmedia_helper.so libmedia_helper-v29.so ${2}
