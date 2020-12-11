@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=begonia
+DEVICE_COMMON=mt6785-common
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2019
@@ -36,13 +36,26 @@ if [ ! -f "$HELPER" ]; then
 fi
 . "$HELPER"
 
-# Initialize the helper
+# Initialize the helper for common device
+setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
+
+# Copyright headers and common guards
+write_headers "begonia begoniain"
+
+# The common blobs
+write_makefiles "$MY_DIR"/proprietary-files.txt true
+
+# We are done with common
+write_footers
+
+# Initialize the helper for device
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
 
 # Copyright headers and guards
 write_headers
 
-write_makefiles "$MY_DIR"/proprietary-files.txt
+# The device blobs
+write_makefiles "$MY_DIR"/../$DEVICE/proprietary-files.txt true
 
 # Finish
 write_footers

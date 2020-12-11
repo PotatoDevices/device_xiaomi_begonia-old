@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/begonia
+COMMON_PATH := device/xiaomi/mt6785-common
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PHONY_TARGETS := true
@@ -82,7 +82,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
-BOARD_CUSTOM_DTBOIMG_MK := $(DEVICE_PATH)/dtbo/dtbo.mk
+BOARD_CUSTOM_DTBOIMG_MK := $(COMMON_PATH)/dtbo/dtbo.mk
 
 # AVB
 BOARD_AVB_ENABLE := true
@@ -97,9 +97,9 @@ TARGET_USES_HWC2 := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 ODM_MANIFEST_SKUS += begonia
-ODM_MANIFEST_BEGONIA_FILES := $(DEVICE_PATH)/manifest_begonia.xml
+ODM_MANIFEST_BEGONIA_FILES := $(COMMON_PATH)/manifest_begonia.xml
 
 # Network Routing
 TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE := true
@@ -123,18 +123,18 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6785
+TARGET_RECOVERY_DEVICE_DIRS += $(COMMON_PATH)
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt6785
 TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2020-02-01
@@ -143,7 +143,7 @@ VENDOR_SECURITY_PATCH := 2020-02-01
 include device/mediatek/sepolicy/sepolicy.mk
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 
 # VNDK
 BOARD_VNDK_VERSION := current
@@ -151,4 +151,4 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 28
 BOARD_VNDK_RUNTIME_DISABLE := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/begonia/BoardConfigVendor.mk
+-include vendor/xiaomi/mt6785-common/BoardConfigVendor.mk
