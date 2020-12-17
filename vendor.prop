@@ -146,9 +146,6 @@ ro.vendor.smvr.p2batch.fhd=4
 ro.vendor.smvr.p2batch.hd=8
 ro.vendor.smvr.p2batch.vga=16
 
-# NFC
-ro.hardware.nfc_nci=nqx.default
-
 # Radio
 telephony.lteOnCdmaDevice=1
 persist.radio.multisim.config=dsds
