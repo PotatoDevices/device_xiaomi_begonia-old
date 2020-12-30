@@ -1,0 +1,1 @@
+allow tee property_socket:sock_file write;
