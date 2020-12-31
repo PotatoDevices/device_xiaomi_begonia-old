@@ -1,0 +1,3 @@
+# VPU
+/dev/vcu		         u:object_r:vcu_device:s0
+/vendor/bin/vpud               u:object_r:vpud_native_exec:s0
