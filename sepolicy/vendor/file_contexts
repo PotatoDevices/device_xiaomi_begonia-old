@@ -1,3 +1,6 @@
+# IMS
+/(system\/vendor|vendor)/bin/volte_md_status            u:object_r:volte_md_status_exec:s0
+
 # VPU
 /dev/vcu		         u:object_r:vcu_device:s0
 /vendor/bin/vpud               u:object_r:vpud_native_exec:s0
