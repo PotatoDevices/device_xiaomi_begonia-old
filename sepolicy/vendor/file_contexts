@@ -1,4 +1,5 @@
 # IMS
+/(system\/vendor|vendor)/bin/volte_imsm_93              u:object_r:volte_imsm_93_exec:s0
 /(system\/vendor|vendor)/bin/volte_md_status            u:object_r:volte_md_status_exec:s0
 
 # VPU
