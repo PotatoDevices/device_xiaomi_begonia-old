@@ -1,0 +1,3 @@
+# FingerPrint
+/data/gf_data(/.*)?              u:object_r:fp_data_file:s0
+/dev/goodix_fp                   u:object_r:fp_device:s0
