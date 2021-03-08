@@ -1024,3 +1024,6 @@ on property:vendor.ril.mtk=1
 on boot
     # SELinux
     write /sys/fs/selinux/enforce 1
+
+    # Disable serial console
+    stop console
