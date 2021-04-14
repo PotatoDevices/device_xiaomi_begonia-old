@@ -22,24 +22,20 @@ ifneq ($(filter begonia begoniain,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 
-GATEKEEPER_SYMLINKS := $(TARGET_OUT_VENDOR)
-$(GATEKEEPER_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating gatekeeper symlinks: $@"
-	@mkdir -p $@/lib/hw
-	@mkdir -p $@/lib64/hw
-	@ln -sf libSoftGatekeeper.so $@/lib/hw/gatekeeper.default.so
-	@ln -sf libSoftGatekeeper.so $@/lib64/hw/gatekeeper.default.so
+GATEKEEPER_SYMLINK += $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.default.so
+GATEKEEPER_SYMLINK += $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.default.so
+$(GATEKEEPER_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf libSoftGatekeeper.so $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(GATEKEEPER_SYMLINKS)
+ALL_DEFAULT_INSTALLED_MODULES += $(GATEKEEPER_SYMLINK)
 
-VULKAN_SYMLINKS := $(TARGET_OUT_VENDOR)
-$(VULKAN_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating vulkan symlinks: $@"
-	@mkdir -p $@/lib/hw/
-	@mkdir -p $@/lib64/hw/
-	@ln -sf $@/lib/egl/libGLES_VULKAN.so $@/lib/hw/vulkan.mt6785.so
-	@ln -sf $@/lib64/egl/libGLES_VULKAN.so $@/lib64/hw/vulkan.mt6785.so
+VULKAN_SYMLINK += $(TARGET_OUT_VENDOR)/lib/hw/vulkan.mt6785.so
+VULKAN_SYMLINK += $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mt6785.so
+$(VULKAN_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf ../egl/libGLES_mali.so $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(VULKAN_SYMLINKS)
+ALL_DEFAULT_INSTALLED_MODULES += $(VULKAN_SYMLINK)
 
 endif
