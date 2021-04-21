@@ -149,7 +149,7 @@ PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 
 # VNDK
 BOARD_VNDK_VERSION := current
-PRODUCT_EXTRA_VNDK_VERSIONS := 28
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/mt6785-common/BoardConfigVendor.mk
