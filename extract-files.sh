@@ -60,9 +60,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-    *.rc)
-        sed -i "s/vendor\/lib\/modules\//vendor\/lib\/modules_prebuilt\//g" ${2}
-        ;;
         # Load VNDK-29 version of libmedia_helper
         vendor/lib64/hw/audio.primary.mt6785.so)
             "${PATCHELF}" --replace-needed libmedia_helper.so libmedia_helper-v29.so ${2}
