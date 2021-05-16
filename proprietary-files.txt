@@ -1,3 +1,11 @@
+# AEE
+vendor/lib/libaedv.so
+vendor/lib/libladder.so
+vendor/lib/libudf.so
+vendor/lib64/libaedv.so
+vendor/lib64/libladder.so
+vendor/lib64/libudf.so
+
 # Audio
 vendor/etc/audio_param/AudioParamOptions.xml
 vendor/etc/audio_param/BtInfo_AudioParam.xml
@@ -1348,8 +1356,6 @@ vendor/bin/nvram_daemon
 vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
-vendor/etc/init/aee_aedv.rc
-vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/microtrust.rc
 vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/vendor.microtrust.hardware.capi@2.0-service.rc
@@ -1357,11 +1363,6 @@ vendor/etc/init_panel_info.sh
 vendor/etc/partition_permission.sh
 
 # Misc
-vendor/bin/aeev
-vendor/bin/aee_aedv
-vendor/bin/aee_aedv64
-vendor/bin/aee_archivev
-vendor/bin/aee_dumpstatev
 vendor/bin/atcid
 vendor/bin/atci_service
 vendor/bin/audiocmdservice_atci
@@ -1430,7 +1431,6 @@ vendor/bin/wfca
 vendor/bin/xcap
 vendor/data/misc/ProjectConfig.mk
 vendor/etc/.tp/.ht120.mtc
-vendor/etc/aee-config
 vendor/etc/agps_profiles_conf2.xml
 vendor/etc/apdb/APDB_MT6785_S01__W1943
 vendor/etc/apdb/APDB_MT6785_S01__W1943_ENUM
@@ -1923,7 +1923,6 @@ vendor/lib/lib3a.n3d3a.so
 vendor/lib/libaalservice.so
 vendor/lib/libaal_cust.so
 vendor/lib/libaal_mtk.so
-vendor/lib/libaedv.so
 vendor/lib/libakm.so
 vendor/lib/libaurisysdemo.so
 vendor/lib/libbessound_hd_mtk_vendor.so
@@ -1983,7 +1982,6 @@ vendor/lib/libispcameraca.so
 vendor/lib/libjpeg-alpha-oal_vendor.so
 vendor/lib/libjpeg-alpha_vendor.so
 vendor/lib/libJpgEncPipe.so
-vendor/lib/libladder.so
 vendor/lib/liblogwrap_vendor.so
 vendor/lib/libminiui.so
 vendor/lib/libmisound.so
@@ -2026,7 +2024,6 @@ vendor/lib/libtflite_mtk.so
 vendor/lib/libtflite_mtk_static.so
 vendor/lib/libthha.so
 vendor/lib/libtlcWidevineModularDrm.so
-vendor/lib/libudf.so
 vendor/lib/liburee_meta_drmkeyinstall.so
 vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodecdrv.so
@@ -2112,7 +2109,6 @@ vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_mtk.so
 vendor/lib64/libabfadp.so
 vendor/lib64/libacdk.so
-vendor/lib64/libaedv.so
 vendor/lib64/libakm.so
 vendor/lib64/libalCFR.so
 vendor/lib64/libalhLDC.so
@@ -2186,7 +2182,6 @@ vendor/lib64/libjpeg-alpha_vendor.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libkmsetkey.so
 vendor/lib64/libksensor.so
-vendor/lib64/libladder.so
 vendor/lib64/liblogwrap_vendor.so
 vendor/lib64/liblpcnr.so
 vendor/lib64/libmfllcore.so
@@ -2230,7 +2225,6 @@ vendor/lib64/libtflite_mtk.so
 vendor/lib64/libtflite_mtk_static.so
 vendor/lib64/libthha.so
 vendor/lib64/libtlcWidevineModularDrm.so
-vendor/lib64/libudf.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libverno.so
