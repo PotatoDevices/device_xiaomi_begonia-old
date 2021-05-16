@@ -1,10 +1,10 @@
-# AEE
-vendor/lib/libaedv.so
-vendor/lib/libladder.so
-vendor/lib/libudf.so
-vendor/lib64/libaedv.so
-vendor/lib64/libladder.so
-vendor/lib64/libudf.so
+# AEE - from begonia-user 11 RP1A.200720.011 21.5.12 release-keys
+vendor/lib/libaedv.so|37ea8c93d3e4788a4020ffb697590a697b8959e7
+vendor/lib/libladder.so|b3161af9c1ae115b467ed6d210355348717145c8
+vendor/lib/libudf.so|0910236ff7b602a7ee4b6cf5472b5cff0d301f52
+vendor/lib64/libaedv.so|989e3a926c173ebc97dcc26d8b00aaf1dbda44c9
+vendor/lib64/libladder.so|47ab171fde2026c25c0c63f0af9bfcee3fcd74a9
+vendor/lib64/libudf.so|00563b48abe3e19856133a87775363a9ef98c049
 
 # Audio
 vendor/etc/audio_param/AudioParamOptions.xml
