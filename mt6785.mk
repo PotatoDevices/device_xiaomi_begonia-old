@@ -214,6 +214,9 @@ PRODUCT_PACKAGES += \
     setup_topmic2headphone.sh \
     teardown_loopback.sh
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6785:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6785
+
 PRODUCT_PACKAGES += \
     init.aee.rc \
     init.ago.rc \
