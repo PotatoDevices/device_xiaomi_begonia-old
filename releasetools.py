@@ -48,9 +48,12 @@ def OTA_InstallEnd(info, incremental):
 
 def Firmware_Images(info, incremental):
     """Adds the firmware files from $(INTERNAL_OTA_PACKAGE_TARGET) into the $(LINEAGE_TARGET_PACKAGE)"""
-    partition_list = ["lk", "lk2", "audio_dsp", "cam_vpu1", "cam_vpu2", "cam_vpu3", "gz1", "gz2", "md1img", "oem_misc1", "scp1", "scp2", "spmfw", "sspm_1", "sspm_2", "tee1", "tee2",]
+    partition_list = ["lk", "lk2", "audio_dsp", "cam_vpu1", "cam_vpu2", "cam_vpu3", "gz1", "gz2", "md1img", "scp1", "scp2", "spmfw", "sspm_1", "sspm_2", "tee1", "tee2",]
+    bin_list = ["logo"]
     block_list = ["sda", "sdb"]
     for partition in partition_list:
         AddImage(info, "{}.img".format(partition), "/dev/block/platform/bootdevice/by-name/{}".format(partition), incremental, True)
+    for partition in bin_list:
+        AddImage(info, "{}.bin".format(partition), "/dev/block/platform/bootdevice/by-name/{}".format(partition), incremental, True)
     for partition in block_list:
         AddImage(info, "{}.img".format(partition), "/dev/block/{}".format(partition), incremental, True)
