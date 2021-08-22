@@ -43,8 +43,8 @@ def AddImage(info, basename, dest, incremental, firmware):
 
 
 def OTA_InstallEnd(info, incremental):
-    AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta", incremental, False)
-    AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo", incremental, False)
+    AddImage(info, "vbmeta.img", "/dev/block/platform/bootdevice/by-name/vbmeta", incremental, False)
+    AddImage(info, "dtbo.img", "/dev/block/platform/bootdevice/by-name/dtbo", incremental, False)
 
 def Firmware_Images(info, incremental):
     """Adds the firmware files from $(INTERNAL_OTA_PACKAGE_TARGET) into the $(LINEAGE_TARGET_PACKAGE)"""
