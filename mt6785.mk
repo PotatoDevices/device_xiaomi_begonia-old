@@ -192,35 +192,22 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    capture.sh \
-    capture_headsetmic.sh \
-    playback.sh \
-    playback_headset.sh \
-    setup_headset2rcv.sh \
-    setup_headsetmic2headphone.sh \
-    setup_mainmic2headphone.sh \
-    setup_topmic2headphone.sh \
-    teardown_loopback.sh
+    init_panel_info.sh \
+    partition_permission.sh \
+    throttle.sh
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6785:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6785
 
 PRODUCT_PACKAGES += \
-    init.aee.rc \
-    init.ago.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6785.rc \
     init.mt6785.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    multi_init.rc \
     fstab.mt6785 \
-    ueventd.mtk.rc
+    ueventd.mt6785.rc
 
 # RenderScript
 PRODUCT_PACKAGES += \
