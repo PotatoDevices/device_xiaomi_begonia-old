@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2019 Potato Open Sauce Project
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -139,7 +139,7 @@ TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2021-02-01
+VENDOR_SECURITY_PATCH := 2021-06-01
 
 # Sepolicy
 include device/mediatek/sepolicy/sepolicy.mk
