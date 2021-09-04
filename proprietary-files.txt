@@ -2277,17 +2277,6 @@ vendor/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta
 vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
 vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
 
-# Vibrator
-vendor/bin/hw/android.hardware.vibrator-service.mediatek
-vendor/bin/hw/android.hardware.vibrator@1.0-service-mediatek
-vendor/bin/hw/vendor.mtk.hardware.vibrator@1.2-service
-vendor/etc/init/android.hardware.vibrator@1.0-service-mediatek.rc
-vendor/etc/init/vendor.mtk.hardware.vibrator@1.2-service.rc
-vendor/etc/init/vibrator-mtk-default.rc
--vendor/etc/vintf/manifest/vibrator-mtk-default.xml
-vendor/lib/hw/android.hardware.vibrator@1.0-impl-mediatek.so
-vendor/lib64/hw/android.hardware.vibrator@1.0-impl-mediatek.so
-
 # WiFi
 vendor/bin/hw/hostapd
 vendor/bin/hw/wpa_supplicant
