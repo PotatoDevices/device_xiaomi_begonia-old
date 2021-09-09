@@ -1020,3 +1020,7 @@ on property:persist.sys.begonia.dt2w=1
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
     stop vendor.ril-daemon
+
+on boot
+    # SELinux
+    write /sys/fs/selinux/enforce 1
