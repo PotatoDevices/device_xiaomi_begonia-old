@@ -13,11 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Set Shipping API level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
