@@ -1,4 +1,4 @@
-# Common proprietary files - from begonia-user 11 RP1A.200720.011 V12.5.1.0.RGGMIXM release-keys, unless pinned
+# Common proprietary files - from begonia-user 11 RP1A.200720.011 V12.5.3.0.RGGMIXM release-keys, unless pinned
 
 # Audio
 system_ext/lib/vendor.mediatek.hardware.audio@6.1.so
