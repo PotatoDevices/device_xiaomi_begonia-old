@@ -242,7 +242,6 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init_panel_info.sh \
     partition_permission.sh \
     throttle.sh
 
