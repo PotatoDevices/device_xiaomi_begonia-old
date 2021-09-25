@@ -154,6 +154,12 @@ ro.vendor.smvr.p2batch.vga=16
 # Neural Networks
 ro.vendor.mtk_nn_support=1
 
+# NFC
+ro.hardware.nfc_nci=nqx.default
+ro.vendor.mtk_uicc_clf=1
+ro.vendor.nfc.repair=1
+ro.vendor.se.type=HCE,UICC
+
 # Radio
 telephony.active_modems.max_count=2
 telephony.lteOnCdmaDevice=1

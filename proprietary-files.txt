@@ -1754,6 +1754,20 @@ vendor/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
 # Neural Networks (Configs)
 vendor/etc/armnn_app.config
 
+# NFC
+vendor/bin/pnscr
+vendor/lib/hw/nfc_nci.nqx.default.so
+vendor/lib/jcos_client.so
+vendor/lib/libsn100u_fw.so
+vendor/lib/nfc_nci.nqx.default.hw.so
+vendor/lib/se_extn_client.so
+vendor/lib/secure_element-impl.so
+vendor/lib64/hw/nfc_nci.nqx.default.so
+vendor/lib64/jcos_client.so
+vendor/lib64/nfc_nci.nqx.default.hw.so
+vendor/lib64/se_extn_client.so
+vendor/lib64/secure_element-impl.so
+
 # NXP
 vendor/lib/lib_smartpa_nxp_ap.so
 vendor/lib/libnxp_extamp_intf.so
