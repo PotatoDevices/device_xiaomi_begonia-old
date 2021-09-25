@@ -995,14 +995,9 @@ vendor/lib64/libfeature_lmv.so
 vendor/lib64/libfeature_rss.so
 
 # Charger
-vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
 vendor/bin/batteryd
 vendor/etc/init/init.batteryd.rc
 vendor/etc/init/init.mishow.ctl.rc
-vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml
-vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so
 
 # Consumerir
 vendor/lib/hw/consumerir.mt6785.so
@@ -1685,16 +1680,6 @@ vendor/etc/init/init.udc_lib.rc
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wmt_drv.rc
 
-# Mlipay
-vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc
--vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml
-vendor/lib/libmt.so
-vendor/lib64/libmt.so
-vendor/lib64/libmt@1.2.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so
-
 # Neural Networks
 system_ext/lib/libapuwareapusys.mtk.so
 system_ext/lib/libapuwareutils.mtk.so
@@ -1917,7 +1902,6 @@ vendor/bin/em_hidl
 vendor/bin/gsm0710muxd
 vendor/bin/netdagent
 vendor/bin/netdc
-vendor/bin/vsimd
 vendor/bin/xcap
 vendor/etc/init/em_hidl_user.rc
 vendor/etc/init/gsm0710muxd.rc
@@ -2166,15 +2150,12 @@ vendor/etc/mdota/MTK_OTA.mcfota
 
 # Sensors
 vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek
-vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
 vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc
-vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
 vendor/lib/hw/sensors.touch.so
 vendor/lib/libakm.so
 vendor/lib/libhwm.so
 vendor/lib/libssccalapi.so
 vendor/lib64/hw/android.hardware.sensors@1.0-impl-mediatek.so
-vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
 vendor/lib64/hw/sensors.mt6785.so
 vendor/lib64/hw/sensors.touch.so
 vendor/lib64/libakm.so
