@@ -14,6 +14,7 @@
 /dev/block/platform/bootdevice/by-name/metadata     /metadata                ext4     noatime,nosuid,nodev,discard                                   wait,check,formattable,first_stage_mount
 /dev/block/platform/bootdevice/by-name/cache        /cache                   ext4     noatime,nosuid,nodev,noauto_da_alloc,discard                   wait,check,formattable
 /dev/block/platform/bootdevice/by-name/userdata     /data                    ext4     noatime,nosuid,nodev,noauto_da_alloc,errors=panic,inlinecrypt  wait,check,formattable,quota,latemount,reservedsize=128m,fileencryption=aes-256-xts:aes-256-cts:v1
+/dev/block/platform/bootdevice/by-name/userdata     /data                    f2fs     noatime,nosuid,nodev,discard,flush_merge,reserve_root=134217,resgid=1065,alloc_mode=reuse,fsync_mode=nobarrier,inlinecrypt wait,check,formattable,quota,latemount,reservedsize=128m,fileencryption=aes-256-xts:aes-256-cts:v1
 
 /dev/block/platform/bootdevice/by-name/protect1     /mnt/vendor/protect_f    ext4     noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc       wait,check,formattable
 /dev/block/platform/bootdevice/by-name/protect2     /mnt/vendor/protect_s    ext4     noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc       wait,check,formattable
