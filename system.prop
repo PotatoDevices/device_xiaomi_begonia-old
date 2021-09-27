@@ -7,13 +7,15 @@ ro.vendor.audio.soundfx.usb=true
 ro.vendor.audio.voice.volume.boost=manual
 
 # Camera
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
 ro.camera.highres.packagelist=org.lineageos.snap
 ro.camera.sensor.id_front=1
 ro.camera.sensor.id_rear=0
 ro.camera.sensor.highres.0=[[9248:6936:33:0],[9280:6944:32:1]]
 ro.camera.sensor.highres.0.max=9280:6944
 ro.camera.sensor.highres.1=[[5184:3880:33:0],[5184:2920:33:0],[5184:2392:33:0],[3888:3888:33:0]]
-persist.vendor.camera.privapp.list=com.android.camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
+vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
 
 # Charger
 ro.charger.enable_suspend=true
