@@ -130,7 +130,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 VENDOR_SECURITY_PATCH := 2021-06-01
 
 # Sepolicy
-include device/mediatek/sepolicy/sepolicy.mk
+include device/mediatek/sepolicy/SEPolicy.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
