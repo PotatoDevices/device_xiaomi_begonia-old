@@ -1138,7 +1138,7 @@ vendor/lib64/libwvhidl.so
 # Fingerprint
 vendor/bin/hw/mfp-daemon
 vendor/etc/init/init.mfp-daemon.rc
--vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
+-vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml:vendor/etc/vintf/manifest/mfp-daemon.xml
 -vendor/etc/vintf/manifest/fp_manifest.xml
 vendor/lib/hw/gf_fingerprint.default.so
 vendor/lib/libgf_ca.so
@@ -1799,7 +1799,7 @@ vendor/etc/init/md_monitor.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc
--vendor/etc/vintf/manifest/power-default.xml
+-vendor/etc/vintf/manifest/power-default.xml:vendor/etc/vintf/manifest/power-mtk-default.xml
 vendor/lib/hw/power.mt6785.so
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.1-impl.so
 vendor/lib/libmmprofile.so
