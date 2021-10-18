@@ -253,9 +253,6 @@ PRODUCT_PACKAGES += \
     partition_permission.sh \
     throttle.sh
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6785:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6785
-
 PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.modem.rc \
@@ -264,6 +261,7 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_1_0.rc \
     fstab.mt6785 \
+    fstab.mt6785_ramdisk \
     ueventd.mt6785.rc
 
 # RenderScript
