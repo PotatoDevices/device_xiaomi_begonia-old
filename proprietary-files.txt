@@ -2135,6 +2135,7 @@ vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
 # Sensors (Configs)
 vendor/etc/pdc.txt
 vendor/etc/pm_test_item_config.xml
+vendor/etc/sensors/hals.conf
 
 # Soter
 -app/SoterService/SoterService.apk:vendor/app/SoterService/SoterService.apk
