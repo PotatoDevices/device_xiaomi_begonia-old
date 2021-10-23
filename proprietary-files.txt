@@ -1580,6 +1580,9 @@ system_ext/lib64/vendor.mediatek.hardware.vpu@1.0.so
 vendor/bin/vpud
 vendor/etc/init/vpud.rc
 vendor/etc/mtk_omx_core.cfg
+vendor/etc/seccomp_policy/mediacodec.policy
+vendor/etc/seccomp_policy/mediaextractor.policy
+vendor/etc/seccomp_policy/mediaswcodec.policy
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
