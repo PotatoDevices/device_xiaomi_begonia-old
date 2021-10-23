@@ -103,14 +103,8 @@
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
-    <!-- Boolean indicating whether the wifi chipset has background scan support -->
-    <bool name="config_wifi_background_scan_support">true</bool>
-
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
     <bool name="config_wifi_dual_band_support">true</bool>
-
-    <!-- Boolean indicating whether single radio chain scan results are to be used for network selection -->
-    <bool name="config_wifi_framework_use_single_radio_chain_scan_results_network_selection">false</bool>
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
@@ -266,14 +260,7 @@
     </array>
 
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
-    <integer name="config_shutdownBatteryTemperature">600</integer>
-
-    <!-- Integer parameters of the wifi to cellular handover feature
-         wifi should not stick to bad networks -->
-    <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_24GHz">-85</integer>
-    <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-82</integer>
-    <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_24GHz">-73</integer>
-    <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_5GHz">-70</integer>
+    <integer name="config_shutdownBatteryTemperature">599</integer>
 
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
@@ -298,16 +285,6 @@
          Note that a physical cutout should be configured in pixels for the best results.
     -->
     <string name="config_mainBuiltInDisplayCutout">M84.0014003,76.0002722 C39.8036856,75.9997279 11.8039716,75.9996372 0.00225823708,76 C-11.8004588,76.0003629 -39.8012115,76.0004536 -84,76.0002722 L-84,-4.19220214e-13 L84.0014003,-4.19220214e-13 L84.0014003,76.0002722 Z</string>
-
-    <!-- MMS user agent string -->
-    <string name="config_mms_user_agent">Android-Mms/0.1</string>
-
-    <!-- MMS user agent prolfile url -->
-    <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
-
-    <!-- Configure wifi tcp buffersizes in the form:
-         rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
-    <string name="config_wifi_tcp_buffers">524288,1048576,4194304,262144,524288,3670016</string>
 
     <!-- Array of ConnectivityManager.TYPE_xxxx values allowable for tethering -->
     <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
@@ -364,19 +341,6 @@
         <item>/system/lib64/libsurfaceflinger.so</item>
     </string-array>
 
-    <!-- Values for GPS configuration -->
-    <string-array name="config_gpsParameters">
-        <item>SUPL_HOST=supl.google.com</item>
-        <item>SUPL_PORT=7275</item>
-        <item>SUPL_VER=0x20000</item>
-        <item>SUPL_MODE=1</item>
-        <item>SUPL_ES=1</item>
-        <item>LPP_PROFILE=0</item>
-        <item>USE_EMERGENCY_PDN_FOR_EMERGENCY_SUPL=1</item>
-        <item>A_GLONASS_POS_PROTOCOL_SELECT=0</item>
-        <item>GPS_LOCK=0</item>
-    </string-array>
-
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          bluetooth interfaces.  If the device doesn't want to support tethering over bluetooth this
          should be empty. -->
@@ -430,7 +394,7 @@
         <item>mobile_bip,27,0,3,60000,true</item>
         <item>mobile_vsim,28,0,-1,60000,true</item>
         <item>mobile_preempt,29,0,9,60000,true</item>
-        <item>wifi_slave,19,1,0,-1,true</item>
+        <item>wifi_slave,30,1,0,-1,true</item>
     </string-array>
 
     <!-- This string array should be overridden by the device to present a list of radio
@@ -452,9 +416,6 @@
     <!-- Rounded corner padding and radius -->
     <dimen name="rounded_corner_radius_top">95.0px</dimen>
     <dimen name="rounded_corner_radius_bottom">90.0px</dimen>
-
-    <!-- True if the firmware supports connected MAC randomization -->
-    <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
 
     <!-- Haptic -->
     <integer-array name="config_longPressVibePattern">
