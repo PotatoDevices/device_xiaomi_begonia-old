@@ -223,6 +223,9 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
 PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0-service
+
+PRODUCT_PACKAGES += \
     libkeymaster4.vendor:64 \
     libkeymaster4support.vendor:64 \
     libkeymaster_messages.vendor:64 \

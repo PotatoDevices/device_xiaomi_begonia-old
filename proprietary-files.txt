@@ -1525,10 +1525,6 @@ vendor/lib64/libwapi.so
 vendor/lib64/libwo.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
-vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
-
 # Lights
 vendor/bin/hw/android.hardware.lights-service.mediatek
 vendor/etc/init/lights-mtk-default.rc
