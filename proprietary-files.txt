@@ -842,7 +842,6 @@ vendor/lib64/libdip_imem.so
 vendor/lib64/libdip_postproc.so
 vendor/lib64/libeffecthal.base.so
 vendor/lib64/libfft_vendor.so
-vendor/lib64/libfmq.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/libimageio.so
 vendor/lib64/libimageio_plat_drv.so

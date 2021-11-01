@@ -150,6 +150,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdrm.vendor \
+    libfmq.vendor \
     libvulkan
 
 PRODUCT_PACKAGES += \
