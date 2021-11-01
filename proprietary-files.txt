@@ -41,6 +41,7 @@ vendor/lib/libmisound.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libspeechparser_vendor.so
+vendor/lib/libtinyxml.so
 vendor/lib/libvow_ap_testing.vendor.so
 vendor/lib/libvowp23_sid_testing.vendor.so
 vendor/lib/libvowp23_sid_training.vendor.so
@@ -75,6 +76,7 @@ vendor/lib64/libmisound.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libspeechparser_vendor.so
+vendor/lib64/libtinyxml.so
 vendor/lib64/libvow_ap_testing.vendor.so
 vendor/lib64/libvowp23_sid_testing.vendor.so
 vendor/lib64/libvowp23_sid_training.vendor.so
