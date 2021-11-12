@@ -100,7 +100,7 @@ ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 # GPS
 ro.vendor.mtk_agps_app=1
 ro.vendor.mtk_gps_support=1
-ro.vendor.mtk_log_hide_gps=0
+ro.vendor.mtk_log_hide_gps=1
 
 # IMS
 persist.dbg.volte_avail_ovr=1
