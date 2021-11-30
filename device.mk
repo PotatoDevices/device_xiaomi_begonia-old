@@ -344,7 +344,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Telephony
 PRODUCT_BOOT_JARS += \
-    ImsServiceBase \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -354,7 +353,6 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-common
 
 PRODUCT_PACKAGES += \
-    ImsServiceBase \
     libshim_vtservice
 
 # Text classifier
