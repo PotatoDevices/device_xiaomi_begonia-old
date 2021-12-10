@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_begonia.mk
+    $(LOCAL_DIR)/potato_begonia.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_begonia-user \
-    lineage_begonia-userdebug \
-    lineage_begonia-eng
+    potato_begonia-user \
+    potato_begonia-userdebug \
+    potato_begonia-eng
