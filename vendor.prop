@@ -121,9 +121,6 @@ ro.vendor.md_auto_setup_ims=1
 ro.incremental.enable=yes
 
 # Media
-debug.stagefright.ccodec=0
-debug.stagefright.omx_default_rank.sw-audio=1
-debug.stagefright.omx_default_rank=0
 vendor.mtk.vdec.waitkeyframeforplay=9
 
 # Neural Networks
