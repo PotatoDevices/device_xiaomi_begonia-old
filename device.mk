@@ -104,6 +104,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
+    libaudiopreprocessing \
     libtinycompress
 
 PRODUCT_COPY_FILES += \

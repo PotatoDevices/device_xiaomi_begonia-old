@@ -43,7 +43,6 @@ vendor/lib/libvowp23_sid_testing.vendor.so
 vendor/lib/libvowp23_sid_training.vendor.so
 vendor/lib/libvowp25testing.vendor.so
 vendor/lib/libvowp2training.vendor.so
-vendor/lib/libwebrtc_audio_preprocessing.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/hw/audio.primary.mt6785.so
 vendor/lib64/hw/audio.r_submix.mt6785.so
@@ -77,7 +76,6 @@ vendor/lib64/libvowp23_sid_testing.vendor.so
 vendor/lib64/libvowp23_sid_training.vendor.so
 vendor/lib64/libvowp25testing.vendor.so
 vendor/lib64/libvowp2training.vendor.so
-vendor/lib64/libwebrtc_audio_preprocessing.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 
 # Audio (Bin)
@@ -199,10 +197,6 @@ vendor/etc/FV-SAM-MTK2.dat
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
 vendor/etc/default_volume_tables.xml
-
-# Audio (SoundFX)
-vendor/lib/soundfx/libaudiopreprocessing_mtk.so
-vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 
 # Bluetooth
 system_ext/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
