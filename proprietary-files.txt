@@ -1529,12 +1529,15 @@ system_ext/lib/libvpuapi.mtk.so
 system_ext/lib/vendor.mediatek.hardware.vpu@1.0.so
 system_ext/lib64/libvpuapi.mtk.so
 system_ext/lib64/vendor.mediatek.hardware.vpu@1.0.so
+vendor/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service
 vendor/bin/vpud
+vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc
 vendor/etc/init/vpud.rc
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/etc/seccomp_policy/mediaextractor.policy
 vendor/etc/seccomp_policy/mediaswcodec.policy
+vendor/lib/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
@@ -1567,6 +1570,7 @@ vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvpu.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib/vendor.mediatek.hardware.mtkcodecservice@1.1.so
+vendor/lib64/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libMtkOmxCore.so
@@ -1577,6 +1581,7 @@ vendor/lib64/libstagefrighthw.so
 vendor/lib64/libthha.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvpu.so
+vendor/lib64/vendor.mediatek.hardware.mtkcodecservice@1.1.so
 
 # MediaTek Modules
 vendor/etc/init/init.bt_drv.rc
