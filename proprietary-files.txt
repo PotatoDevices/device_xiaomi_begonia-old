@@ -1501,6 +1501,16 @@ vendor/lib64/libwapi.so
 vendor/lib64/libwo.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
+vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
+vendor/lib64/libkeymaster4.so
+vendor/lib64/libkeymaster4support.so
+vendor/lib64/libkeymaster_messages.so
+vendor/lib64/libkeymaster_portable.so
+vendor/lib64/libpuresoftkeymasterdevice.so
+vendor/lib64/libsoft_attestation_cert.so
+
 # Lights
 vendor/bin/hw/android.hardware.lights-service.mediatek
 vendor/etc/init/lights-mtk-default.rc
@@ -1535,10 +1545,10 @@ vendor/bin/vpud
 vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc
 vendor/etc/init/vpud.rc
-vendor/etc/mtk_omx_core.cfg
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/etc/seccomp_policy/mediaextractor.policy
 vendor/etc/seccomp_policy/mediaswcodec.policy
+vendor/etc/mtk_omx_core.cfg
 vendor/lib/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
@@ -2088,9 +2098,9 @@ vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
 
 # Sensors (Configs)
+vendor/etc/sensors/hals.conf
 vendor/etc/pdc.txt
 vendor/etc/pm_test_item_config.xml
-vendor/etc/sensors/hals.conf
 
 # Soter
 -app/SoterService/SoterService.apk:vendor/app/SoterService/SoterService.apk
