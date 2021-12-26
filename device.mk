@@ -415,6 +415,7 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl
 
 PRODUCT_PACKAGES += \
+    TetheringResOverlay \
     WifiResOverlay
 
 PRODUCT_COPY_FILES += \
