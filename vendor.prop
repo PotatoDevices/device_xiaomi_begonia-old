@@ -120,6 +120,14 @@ ro.vendor.md_auto_setup_ims=1
 # IncrementalFS
 ro.incremental.enable=yes
 
+# Log
+persist.log.tag.GED=S
+persist.log.tag.hwcomposer=S
+persist.log.tag.libnfc_nci=S
+persist.log.tag.libPowerHal=S
+persist.log.tag.mTEE=S
+persist.log.tag.mtkpower@impl=S
+
 # Media
 vendor.mtk.vdec.waitkeyframeforplay=9
 
