@@ -1,3 +1,6 @@
+# Audio
+vendor.audio.            u:object_r:vendor_mtk_audiohal_prop:s0
+
 # Camera
 persist.vendor.camera.privapp.list    u:object_r:exported_default_prop:s0
 persist.vendor.camera.mi.             u:object_r:vendor_mi_camera_prop:s0
@@ -26,4 +29,4 @@ ro.hardware.fp.            u:object_r:vendor_fp_prop:s0
 ro.boot.fpsensor.          u:object_r:vendor_fp_prop:s0
 
 # Thermal
-vendor.sys.thermal.     u:object_r:thermal_engine_prop:s0
+vendor.sys.thermal.     u:object_r:thermal_normal_prop:s0
