@@ -274,6 +274,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     android.hardware.power-V1-ndk_platform.vendor
 
+# Properties
+include $(DEVICE_PATH)/vendor_logtag.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
