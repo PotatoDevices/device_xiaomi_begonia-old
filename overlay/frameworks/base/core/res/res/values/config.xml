@@ -452,4 +452,7 @@
     <!-- ID0:Fingerprint:Strong -->
         <item>0:2:15</item>
     </string-array>
+
+    <!-- Remove Mtk Ims app from privacy (location) indicators -->
+    <string name="config_systemAudioIntelligence" translatable="false">com.mediatek.ims</string>
 </resources>
